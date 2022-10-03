@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7495C024-BA1E-468D-B87F-5499F426A323}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SzachyAdvanced</RootNamespace>
+    <AssemblyName>SzachyAdvanced</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameOver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameOver.Designer.cs">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="MainChessBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainChessBoard.Designer.cs">
+      <DependentUpon>MainChessBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="PromotionPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PromotionPanel.Designer.cs">
+      <DependentUpon>PromotionPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GameOver.resx">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainChessBoard.resx">
+      <DependentUpon>MainChessBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PromotionPanel.resx">
+      <DependentUpon>PromotionPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="PionkiLib\PionkiLib.csproj">
+      <Project>{3f7dc733-1179-4489-8c38-0957b80eacd6}</Project>
+      <Name>PionkiLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_7_5999243828 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d01b4d53-3cce-4f1e-a6da-4155e4499617-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chess_tile_kl.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chess_tile_kd.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_18_9248285479.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\97ecf031-1c31-423c-883e-ba9cce0d116a-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0133c9c1-c24b-48a6-82ce-e4a9fc017bfe-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_23_7256408355.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_39_7215680545.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1511307-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_44_2551633725.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_51_8071306923.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_57_4487573495.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd-green-dot-circle-icon-11642066802ysgbn4cpvp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd-green-dot-circle-icon-11642066802ysgbn4cpvp-removebg-preview.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

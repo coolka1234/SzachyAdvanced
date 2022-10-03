@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzachyAdvanced", "SzachyAdvanced.csproj", "{7495C024-BA1E-468D-B87F-5499F426A323}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PionkiLib", "PionkiLib\PionkiLib.csproj", "{3F7DC733-1179-4489-8C38-0957B80EACD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7495C024-BA1E-468D-B87F-5499F426A323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7495C024-BA1E-468D-B87F-5499F426A323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7495C024-BA1E-468D-B87F-5499F426A323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7495C024-BA1E-468D-B87F-5499F426A323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F7DC733-1179-4489-8C38-0957B80EACD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7DC733-1179-4489-8C38-0957B80EACD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F7DC733-1179-4489-8C38-0957B80EACD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F7DC733-1179-4489-8C38-0957B80EACD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C51DE190-E483-4E28-BC27-E0B8F354E79F}
+	EndGlobalSection
+EndGlobal
